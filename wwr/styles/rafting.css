@@ -1,0 +1,130 @@
+/* 1. Define Variables (Colors and Fonts) */
+:root {
+    --primary-color: #2E8B57;
+    /* Sea Green */
+    --secondary-color: #DAA520;
+    /* Goldenrod */
+    --accent1-color: #2F4F4F;
+    /* Dark Slate Gray */
+    --accent2-color: #F0E68C;
+    /* Khaki */
+    --heading-font: "Times New Roman", serif;
+    --body-font: Arial, sans-serif;
+}
+
+/* 2. Reset Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+/* 4. Layout Constraints (Width & Centering) */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* 5. Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-width: 100px;
+    /* Adjust logo size */
+    height: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+/* 6. General Elements */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* 7. Hero Section (The Overlay Trick) */
+.hero {
+    position: relative;
+    /* Parent must be relative */
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 79, 79, 0.7);
+    /* accent1 with transparency */
+    color: #fff;
+    padding: 1rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    width: 80%;
+    max-width: 500px;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+}
+
+/* 8. Footer Styling */
+footer {
+    margin-top: 20px;
+    border-top: 2px solid var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.socialmedia img {
+    width: 30px;
+    /* Small icon size */
+    height: auto;
+}
