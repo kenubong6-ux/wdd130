@@ -1,6 +1,6 @@
-/* 1. Define Variables (Colors and Fonts) */
+/* 1. Define Variables */
 :root {
-    --primary-color: #1b5e20;
+    --primary-color: #006400;
     --secondary-color: #DAA520;
     --accent1-color: #2F4F4F;
     --accent2-color: #F0E68C;
@@ -21,7 +21,7 @@ body {
     color: var(--accent1-color);
 }
 
-/* 4. Layout Constraints (Width & Centering) */
+/* 4. Layout Constraints */
 header,
 main,
 footer {
@@ -45,17 +45,22 @@ header img {
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin-left: 1rem;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    text-decoration: underline;
 }
 
 /* 6. General Elements */
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 nav,
@@ -66,7 +71,7 @@ article {
     padding: 8px;
 }
 
-/* 7. Hero Section (The Overlay Trick) */
+/* 7. Hero Section */
 .hero {
     position: relative;
 }
@@ -82,8 +87,8 @@ article {
     top: 20px;
     width: 100%;
     text-align: center;
-    background-color: rgba(47, 79, 79, 0.7);
-    color: #fff;
+    background-color: rgba(0, 100, 0, 0.7);
+    color: #ffffff;
     padding: 1rem;
 }
 
@@ -106,7 +111,7 @@ article {
 /* 8. Footer Styling */
 footer {
     margin-top: 20px;
-    border-top: 2px solid var(--primary-color);
+    border-top: 5px solid var(--secondary-color);
     text-align: center;
     padding: 1rem;
 }
